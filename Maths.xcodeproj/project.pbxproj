@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		95382B1F1DC8FD4F003F60B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B1E1DC8FD4F003F60B8 /* main.m */; };
+		95382B271DC90346003F60B8 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B261DC90346003F60B8 /* AdditionQuestion.m */; };
+		95382B2A1DC908CE003F60B8 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B291DC908CE003F60B8 /* ScoreKeeper.m */; };
+		95382B2D1DC90B22003F60B8 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B2C1DC90B22003F60B8 /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		95382B1B1DC8FD4F003F60B8 /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		95382B1E1DC8FD4F003F60B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95382B251DC90346003F60B8 /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		95382B261DC90346003F60B8 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		95382B281DC908CE003F60B8 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		95382B291DC908CE003F60B8 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
+		95382B2B1DC90B22003F60B8 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		95382B2C1DC90B22003F60B8 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				95382B1E1DC8FD4F003F60B8 /* main.m */,
+				95382B281DC908CE003F60B8 /* ScoreKeeper.h */,
+				95382B291DC908CE003F60B8 /* ScoreKeeper.m */,
+				95382B251DC90346003F60B8 /* AdditionQuestion.h */,
+				95382B261DC90346003F60B8 /* AdditionQuestion.m */,
+				95382B2B1DC90B22003F60B8 /* InputHandler.h */,
+				95382B2C1DC90B22003F60B8 /* InputHandler.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95382B2A1DC908CE003F60B8 /* ScoreKeeper.m in Sources */,
 				95382B1F1DC8FD4F003F60B8 /* main.m in Sources */,
+				95382B271DC90346003F60B8 /* AdditionQuestion.m in Sources */,
+				95382B2D1DC90B22003F60B8 /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
