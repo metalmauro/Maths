@@ -12,7 +12,7 @@
 
 -(void)scoreCard{
     NSInteger totalQ =(self.correct + self.incorrect);
-    float percentage = ((self.correct/totalQ)*100);
+    float percentage = (((float)self.correct/totalQ)*100);
     NSLog(@"Score so far: %ld were correct. %ld were incorrect. \n --- %f Percent Correct", self.correct, self.incorrect, percentage);
     
 }
