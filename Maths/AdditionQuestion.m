@@ -11,7 +11,8 @@
 @implementation AdditionQuestion
 
 -(instancetype)init{
-    if(self = [super init]){
+    if(self = [super init])
+    {
         
         int first = arc4random_uniform(100);
         int second = arc4random_uniform(100);
@@ -20,12 +21,20 @@
         
         _question = question;
         _answer = answer;
-        
-        
-        
+        _startTime = [NSDate date];
     }
     return self;
 }
 
+-(NSInteger)answer
+{
+    _endTime = [NSDate date];
+    return _answer;
+}
+
+-(NSTimeInterval)answerTime
+{
+    return [self.endTime timeIntervalSinceDate:self.startTime];
+}
 
 @end

@@ -10,15 +10,19 @@
 #import "AdditionQuestion.h"
 #import "ScoreKeeper.h"
 #import "InputHandler.h"
+#import "QuestionManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BOOL gameOn = YES;
         ScoreKeeper *SK = [[ScoreKeeper alloc]init];
+        QuestionManager *QM = [[QuestionManager alloc]init];
         
         while (gameOn == YES) {
 
             AdditionQuestion *new = [[AdditionQuestion alloc]init];
+            [QM.questions addObject:new];
+            
             InputHandler *Ih = [[InputHandler alloc]init];
             
             NSLog(@"%@", new.question);
@@ -30,8 +34,9 @@ int main(int argc, const char * argv[]) {
             }
             
             NSInteger newAns = [answer integerValue];
+            NSInteger answ = [new answer];
             
-            if(newAns == new.answer){
+            if(newAns == answ){
                 NSLog(@"Right!");
                 SK.correct++;
             }else{
@@ -39,6 +44,7 @@ int main(int argc, const char * argv[]) {
                 SK.incorrect++;
             }
             [SK scoreCard];
+            NSLog(@"%@", [QM timeOutput]);
             
         }
         

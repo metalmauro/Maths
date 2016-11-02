@@ -12,7 +12,11 @@
 
 @property (nonatomic) NSString *question;
 @property (nonatomic) NSInteger answer;
+@property NSDate *startTime;
+@property NSDate *endTime;
 
+-(NSInteger)answer;
+-(NSTimeInterval)answerTime;
 -(instancetype)init;
 
 @end
