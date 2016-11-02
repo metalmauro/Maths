@@ -7,20 +7,23 @@
 //
 #include <stdlib.h>
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "ScoreKeeper.h"
 #import "InputHandler.h"
 #import "QuestionManager.h"
+#import "QuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BOOL gameOn = YES;
         ScoreKeeper *SK = [[ScoreKeeper alloc]init];
         QuestionManager *QM = [[QuestionManager alloc]init];
+        QuestionFactory *QF = [[QuestionFactory alloc]init];
         
         while (gameOn == YES) {
 
-            AdditionQuestion *new = [[AdditionQuestion alloc]init];
+            Question *new = [QF generateRandomQuestion];
+            
             [QM.questions addObject:new];
             
             InputHandler *Ih = [[InputHandler alloc]init];

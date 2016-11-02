@@ -7,7 +7,7 @@
 //
 
 #import "QuestionManager.h"
-#import "AdditionQuestion.h"
+#import "Question.h"
 
 @implementation QuestionManager
 
@@ -24,7 +24,7 @@
 -(NSString *)timeOutput
 {
     int totalTime = 0;
-    for (AdditionQuestion *q in _questions)
+    for (Question *q in _questions)
     {
         totalTime += [q answerTime];
     }

@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		95382B1F1DC8FD4F003F60B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B1E1DC8FD4F003F60B8 /* main.m */; };
-		95382B271DC90346003F60B8 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B261DC90346003F60B8 /* AdditionQuestion.m */; };
+		95382B271DC90346003F60B8 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B261DC90346003F60B8 /* Question.m */; };
 		95382B2A1DC908CE003F60B8 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B291DC908CE003F60B8 /* ScoreKeeper.m */; };
 		95382B2D1DC90B22003F60B8 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 95382B2C1DC90B22003F60B8 /* InputHandler.m */; };
 		956B26BF1DCA379F0084F89E /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 956B26BE1DCA379F0084F89E /* QuestionManager.m */; };
+		956B26C21DCA48B30084F89E /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 956B26C11DCA48B30084F89E /* AdditionQuestion.m */; };
+		956B26C51DCA48DD0084F89E /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 956B26C41DCA48DD0084F89E /* SubtractionQuestion.m */; };
+		956B26C81DCA48EE0084F89E /* MultiplicationQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 956B26C71DCA48EE0084F89E /* MultiplicationQuestion.m */; };
+		956B26CB1DCA48F70084F89E /* DivisionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 956B26CA1DCA48F70084F89E /* DivisionQuestion.m */; };
+		95C823E51DCA4E0A002BFB03 /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C823E41DCA4E0A002BFB03 /* QuestionFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,14 +34,24 @@
 /* Begin PBXFileReference section */
 		95382B1B1DC8FD4F003F60B8 /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		95382B1E1DC8FD4F003F60B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		95382B251DC90346003F60B8 /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
-		95382B261DC90346003F60B8 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		95382B251DC90346003F60B8 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		95382B261DC90346003F60B8 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		95382B281DC908CE003F60B8 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
 		95382B291DC908CE003F60B8 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 		95382B2B1DC90B22003F60B8 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		95382B2C1DC90B22003F60B8 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		956B26BD1DCA379F0084F89E /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		956B26BE1DCA379F0084F89E /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		956B26C01DCA48B30084F89E /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		956B26C11DCA48B30084F89E /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		956B26C31DCA48DD0084F89E /* SubtractionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtractionQuestion.h; sourceTree = "<group>"; };
+		956B26C41DCA48DD0084F89E /* SubtractionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtractionQuestion.m; sourceTree = "<group>"; };
+		956B26C61DCA48EE0084F89E /* MultiplicationQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplicationQuestion.h; sourceTree = "<group>"; };
+		956B26C71DCA48EE0084F89E /* MultiplicationQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplicationQuestion.m; sourceTree = "<group>"; };
+		956B26C91DCA48F70084F89E /* DivisionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivisionQuestion.h; sourceTree = "<group>"; };
+		956B26CA1DCA48F70084F89E /* DivisionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivisionQuestion.m; sourceTree = "<group>"; };
+		95C823E31DCA4E0A002BFB03 /* QuestionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
+		95C823E41DCA4E0A002BFB03 /* QuestionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +87,22 @@
 				95382B1E1DC8FD4F003F60B8 /* main.m */,
 				95382B281DC908CE003F60B8 /* ScoreKeeper.h */,
 				95382B291DC908CE003F60B8 /* ScoreKeeper.m */,
-				95382B251DC90346003F60B8 /* AdditionQuestion.h */,
-				95382B261DC90346003F60B8 /* AdditionQuestion.m */,
+				95382B251DC90346003F60B8 /* Question.h */,
+				95382B261DC90346003F60B8 /* Question.m */,
+				956B26C91DCA48F70084F89E /* DivisionQuestion.h */,
+				956B26CA1DCA48F70084F89E /* DivisionQuestion.m */,
+				956B26C61DCA48EE0084F89E /* MultiplicationQuestion.h */,
+				956B26C71DCA48EE0084F89E /* MultiplicationQuestion.m */,
+				956B26C31DCA48DD0084F89E /* SubtractionQuestion.h */,
+				956B26C41DCA48DD0084F89E /* SubtractionQuestion.m */,
+				956B26C01DCA48B30084F89E /* AdditionQuestion.h */,
+				956B26C11DCA48B30084F89E /* AdditionQuestion.m */,
 				956B26BD1DCA379F0084F89E /* QuestionManager.h */,
 				956B26BE1DCA379F0084F89E /* QuestionManager.m */,
 				95382B2B1DC90B22003F60B8 /* InputHandler.h */,
 				95382B2C1DC90B22003F60B8 /* InputHandler.m */,
+				95C823E31DCA4E0A002BFB03 /* QuestionFactory.h */,
+				95C823E41DCA4E0A002BFB03 /* QuestionFactory.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -140,9 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				956B26BF1DCA379F0084F89E /* QuestionManager.m in Sources */,
+				956B26C81DCA48EE0084F89E /* MultiplicationQuestion.m in Sources */,
+				956B26C21DCA48B30084F89E /* AdditionQuestion.m in Sources */,
+				956B26C51DCA48DD0084F89E /* SubtractionQuestion.m in Sources */,
 				95382B2A1DC908CE003F60B8 /* ScoreKeeper.m in Sources */,
 				95382B1F1DC8FD4F003F60B8 /* main.m in Sources */,
-				95382B271DC90346003F60B8 /* AdditionQuestion.m in Sources */,
+				956B26CB1DCA48F70084F89E /* DivisionQuestion.m in Sources */,
+				95382B271DC90346003F60B8 /* Question.m in Sources */,
+				95C823E51DCA4E0A002BFB03 /* QuestionFactory.m in Sources */,
 				95382B2D1DC90B22003F60B8 /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

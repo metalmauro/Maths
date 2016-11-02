@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  SubtractionQuestion.h
 //  Maths
 //
 //  Created by Matthew Mauro on 2016-11-02.
@@ -8,8 +8,7 @@
 
 #import "Question.h"
 
-@interface AdditionQuestion : Question
-
+@interface SubtractionQuestion : Question
 -(instancetype)init;
 -(void)generateQuestion;
 @end
